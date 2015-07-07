@@ -11,6 +11,8 @@ set title "Bitcoin 2-month history"
 set ylabel "price (USD)"
 set y2label "volume (BTC)"
 
+set label "Greek bank\nshutdown" at first "2015-06-27",251.21 front right offset 0,2 point pt 7;
+
 plot 'bitcoin.dat' using 1:6 \
      axes x1y2 with boxes fs solid ls 2 title "volume", \
      'bitcoin.dat' using 1:5 \
